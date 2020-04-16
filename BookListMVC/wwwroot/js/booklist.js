@@ -20,11 +20,11 @@ function loadDataTable() {
                 "render": function (data) {
                     debugger;
                     return `<div class="text-center">
-                                <a href="/BookList/Upsert?id=${data}" class="btn btn-success btn-sm text-white" style="cursor:pointer; width:20%" >
+                                <a href="/Books/Upsert?id=${data}" class="btn btn-success btn-sm text-white" style="cursor:pointer; width:20%" >
                                     Edit
                                 </a>
                                 &nbsp;
-                                <a onClick=Delete('api/Book?id=${data}') class="btn btn-danger btn-sm text-white" style="cursor:pointer; width:20%" >
+                                <a onClick=Delete('/Books/delete?id=${data}') class="btn btn-danger btn-sm text-white" style="cursor:pointer; width:20%" >
                                     Delete
                                 </a>
                             </div>
